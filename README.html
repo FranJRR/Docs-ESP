@@ -368,26 +368,580 @@ code {
 <h1> 📖 Documentación📖 </h1>
 <p>Bienvenidos a este proyecto dedicado a la documentación sobre <strong>Angular</strong> con <strong>Material UI</strong>.</p>
 <p>Este proyecto esta hecho con la finalidad que entre la comunidad de <strong>GIT</strong> consigamos tener la mejor documentación hispanohablante dedicada a estos <strong>Frameworks</strong>. <img src=imagenes\angular-material-logo.svg alt=logo height= 18px/><img src=imagenes\icons8-angular.svg alt=lo1go height= 20px/></p>
-<hr>
 <h1> <img src=imagenes\direccion.png alt=logo height=30px/> Índice <img src=imagenes\direccion.png alt=logo height=30px/><h1>
 <ul>
-<li><a href="#prepara-tu-entorno">Prepara tu entorno</a>
+<li><a href="#introducci%C3%B3n">Introducción</a>
 <ul>
-<li><a href="#editor-de-codigo">Editor de codigo</a></li>
-<li><a href="#instalar-git">Instalar GIT</a></li>
-<li><a href="#clonar-repositorio">Clonar repositorio</a></li>
-<li><a href="#"></a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#angular">Angular</a></li>
+<li><a href="#angular-material">Angular Material</a>
+<ul>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#prepara-tu-entorno">Prepara tu entorno</a>
+<ul>
+<li><a href="#nodejs-y-npm">NODE.JS y NPM</a>
+<ul>
+<li><a href="#que-es-node">Que es NODE</a></li>
+<li><a href="#que-es-npm">Que es NPM</a></li>
+<li><a href="#instalar-node">Instalar NODE</a></li>
+</ul>
+</li>
+<li><a href="#editor-de-codigo">Editor de codigo</a>
+<ul>
+<li><a href="#1-angular-snippets">1. Angular Snippets</a></li>
+<li><a href="#2-angular-language-service">2. Angular Language Service</a></li>
+<li><a href="#3-angular-console">3. Angular Console</a></li>
+<li><a href="#4-chrome--edge-debugger">4. Chrome &amp; Edge Debugger</a></li>
+<li><a href="#5-prettier">5. Prettier</a></li>
+<li><a href="#6-material-icon-theme">6. Material Icon Theme</a></li>
+<li><a href="#7-path-intellisense">7. Path Intellisense</a></li>
+<li><a href="#8-auto-import">8. Auto Import</a></li>
+<li><a href="#9-peacock">9. Peacock</a></li>
+<li><a href="#10-angular-schematics">10. Angular Schematics</a></li>
+</ul>
+</li>
+<li><a href="#instalar-git">Instalar GIT</a></li>
+<li><a href="#clonar-repositorio">Clonar repositorio</a></li>
+<li><a href="#primer-arranque">Primer arranque</a>
+<ul>
+<li><a href="#instalaci%C3%B3n-de-las-dependencias">Instalación de las dependencias</a></li>
+<li><a href="#arranque-del-servidor-de-desarrollo">Arranque del servidor de desarrollo</a></li>
+<li><a href="#construcci%C3%B3n-del-proyecto">Construcción del proyecto</a></li>
+<li><a href="#ayuda-adicional">Ayuda adicional</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#typescript-1">Typescript</a>
+<ul>
+<li><a href="#que-es-typescript">Que es Typescript</a></li>
+<li><a href="#primeros-pasos">Primeros pasos</a></li>
+<li><a href="#tipos-b%C3%A1sicos">Tipos básicos</a></li>
+<li><a href="#objetos-arreglos-e-interfaces">Objetos, arreglos e interfaces</a></li>
+<li><a href="#funciones-y-sus-argumentos">Funciones y sus argumentos</a></li>
+<li><a href="#destructuracion-de-arrays-y-objetos">Destructuracion de arrays y objetos</a></li>
+<li><a href="#importaciones-y-exportaciones">Importaciones y exportaciones</a></li>
+</ul>
+</li>
+<li><a href="#angular-1">Angular</a>
+<ul>
 <li><a href="#que-es-angular">Que es Angular</a></li>
 </ul>
+</li>
+</ul>
+<h1 id="introducci%C3%B3n">Introducción</h1>
+<h2 id="typescript">TypeScript</h2>
+<p><strong>TypeScript</strong> es un superconjunto de JavaScript que añade tipos estáticos a la lengua. Los tipos proporcionan una forma de describir la forma de un objeto, proporcionando una mejor documentación y permitiendo a TypeScript validar que tu código está funcionando correctamente. Esto hace que el código sea más fácil de entender y menos propenso a errores. TypeScript es especialmente útil en proyectos grandes y complejos donde la seguridad de los tipos puede ayudar a prevenir errores difíciles de detectar.</p>
+<h2 id="angular">Angular</h2>
+<p><strong>Angular</strong> es un marco de trabajo desarrollado y mantenido por Google para la construcción de aplicaciones web de una sola página (SPA). Angular ha revolucionado el desarrollo web con su enfoque basado en componentes. En lugar de construir una aplicación web como un código monolítico, Angular permite a los desarrolladores construir aplicaciones como un conjunto de componentes reutilizables. Cada componente en Angular tiene su propia lógica y vista, lo que facilita la gestión y el mantenimiento del código. Además, Angular viene con una serie de características poderosas, como enrutamiento, gestión del estado, formularios reactivos, pruebas unitarias y de extremo a extremo, que hacen que el desarrollo de aplicaciones complejas sea más manejable.</p>
+<h2 id="angular-material">Angular Material</h2>
+<p><strong>Angular Material</strong> es una biblioteca de componentes de interfaz de usuario (UI) para Angular. Proporciona un conjunto de componentes de UI preconstruidos que siguen los principios del Material Design de Google. Estos componentes ayudan a los desarrolladores a construir interfaces de usuario consistentes y atractivas para las aplicaciones Angular sin tener que crear cada componente desde cero. Angular Material también se integra perfectamente con Angular, lo que permite a los desarrolladores aprovechar todas las características de Angular al trabajar con Angular Material.</p>
+<h3 id="conclusi%C3%B3n">Conclusión</h3>
+<p>Juntos, <strong>TypeScript</strong>,  <strong>Angular</strong> y <strong>Angular Material</strong> forman una combinación poderosa para el desarrollo web. Esta guía te llevará a través de los conceptos básicos de estas tecnologías, desde la instalación hasta la creación de tu primera aplicación Angular con Angular Material y TypeScript. A lo largo del camino, aprenderás sobre los conceptos clave de Angular, cómo crear y estilizar componentes con Angular Material, y cómo aprovechar el poder de TypeScript en tus proyectos de Angular.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
 <h1 id="prepara-tu-entorno">Prepara tu entorno</h1>
+<h2 id="nodejs-y-npm">NODE.JS y NPM</h2>
+<h3 id="que-es-node">Que es NODE</h3>
+<p><strong>Node.js</strong> es un entorno en tiempo de ejecución de JavaScript. Este entorno permite a los desarrolladores crear toda clase de herramientas de lado servidor y aplicaciones en JavaScript. Node.js fue creado por los desarrolladores originales de JavaScript y transformó JavaScript de algo que solo podía ejecutarse en el navegador en algo que se podría ejecutar en los ordenadores como si de aplicaciones independientes se tratara. Node.js se ejecuta en el motor de tiempo de ejecución JavaScript V8, que es el motor de JavaScript que alimenta Google Chrome. Este motor toma el código JavaScript y lo convierte en un código de máquina más rápido.</p>
+<hr>
+<h3 id="que-es-npm">Que es NPM</h3>
+<p>NPM, que significa &quot;Node Package Manager&quot;, es el administrador de paquetes predeterminado para el tiempo de ejecución de JavaScript Node.js.</p>
+<p>NPM tiene dos partes principales:</p>
+<ol>
+<li>Una herramienta CLI (interfaz de línea de comandos) para la publicación y descarga de paquetes.</li>
+<li>Un repositorio en línea que alberga paquetes de JavaScript.</li>
+</ol>
+<p>NPM permite a los desarrolladores de JavaScript compartir paquetes útiles de forma rápida y fácil. En el momento de escribir este post, ¡npm ha facilitado la publicación de más de 1.3 millones de paquetes con una tasa de descarga semanal de más de 16 mil millones!</p>
+<p>Además, cada proyecto en JavaScript puede ser enfocado como un paquete npm con su propia información de paquete y su archivo <code>package.json</code> para describir el proyecto. Este archivo se generará cuando se ejecute <code>npm init</code> para inicializar un proyecto JavaScript/Node.js.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<hr>
+<h3 id="instalar-node">Instalar NODE</h3>
+<ol>
+<li>
+<p><strong>Abre la página de descarga de Node.js</strong>. Ve a <code>nodejs.org</code> en el navegador web de tu computadora.</p>
+</li>
+<li>
+<p><strong>Haz clic en la opción Current (&quot;Actual&quot;)</strong>. Es un cuadro verde en la parte derecha de la página. Hacerlo hará que se descargue el archivo de configuración de Node.js en la computadora.</p>
+</li>
+<li>
+<p><strong>Haz doble clic en el archivo de configuración</strong>. Lo encontrarás en la carpeta de descargas predeterminada de la computadora.</p>
+</li>
+<li>
+<p><strong>Haz clic en Siguiente</strong>. Se encuentra en la parte inferior de la ventana de configuración.</p>
+</li>
+<li>
+<p><strong>Marca la casilla de &quot;Acepto&quot;</strong>. La encontrarás debajo de los términos de uso.</p>
+</li>
+<li>
+<p><strong>Haz clic en Siguiente</strong>. Se encuentra en la parte inferior de la ventana.</p>
+</li>
+<li>
+<p><strong>Especifica una ubicación para la instalación</strong>. En caso de que quieras cambiar la ubicación predeterminada para la instalación (que es C:\Archivos de programa\nodejs), haz lo siguiente:</p>
+<ul>
+<li>Haz clic en Cambiar... debajo de la ruta de instalación actual.</li>
+<li>Haz clic en el cuadro desplegable de &quot;Buscar&quot;.</li>
+<li>Haz clic en Archivos de programa.</li>
+<li>Selecciona la carpeta en la que quieras instalar Node.js.</li>
+<li>Haz clic en ACEPTAR.</li>
+</ul>
+</li>
+<li>
+<p><strong>Haz clic dos veces en Siguiente</strong>. Se encuentra en la parte inferior de la ventana.</p>
+</li>
+<li>
+<p><strong>Haz clic en Instalar</strong>. Encontrarás esta opción en la parte inferior de la ventana. Node.js comenzará a instalarse.</p>
+</li>
+<li>
+<p><strong>Haz clic en Terminado cuando se te pida</strong>. En este momento, se habrá instalado Node.js. Podrás comprobar que la instalación se haya realizado con éxito usando el &quot;Símbolo del sistema&quot;.</p>
+</li>
+</ol>
+<p>Para probar la instalación, puedes seguir estos pasos:</p>
+<ol>
+<li>
+<p><strong>Abre Inicio</strong>. Haz clic en el logotipo de Windows en la esquina inferior izquierda de la pantalla.</p>
+</li>
+<li>
+<p><strong>Busca el &quot;Símbolo del sistema&quot;</strong>. Escribe símbolo del sistema para hacerlo.</p>
+</li>
+<li>
+<p><strong>Haz clic en Símbolo del sistema</strong>. Se encuentra en la parte superior del menú &quot;Inicio&quot;. Al hacerlo se abrirá la ventana de &quot;Símbolo del sistema&quot;.</p>
+</li>
+<li>
+<p><strong>Introduce el comando &quot;versión&quot;</strong>. Escribe <code>node -v</code> y presiona Intro. Se te saludará con un mensaje con el texto &quot;v Número&quot; donde &quot;Número&quot; será el número de versión del programa Node.js que hayas descargado.</p>
+</li>
+<li>
+<p><strong>Instala un paquete en caso de que sea necesario</strong>. Si quieres probar la habilidad de Node.js para instalar un paquete, escribe <code>npm install -g http-server</code> en el &quot;Símbolo del sistema&quot; y presiona Intro. Aparecerá una barra de progreso en el &quot;Símbolo del sistema&quot;, y la extensión &quot;http-server&quot; se instalará en la carpeta de instalación de Node.js.</p>
+</li>
+</ol>
+<p>Si tienes problemas con la instalación, puedes intentar restaurar Node.js de la siguiente manera:</p>
+<ul>
+<li>Abre la carpeta de instalación.</li>
+<li>Busca la carpeta &quot;nodejs&quot; y bórrala.</li>
+<li>Haz doble clic en el archivo de instalación de Node.js para reiniciar la instalación.</li>
+<li>Usa la configuración predeterminada para instalar Node.js.</li>
+</ul>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<hr>
 <h2 id="editor-de-codigo">Editor de codigo</h2>
-<p>Lo primero de todo es tener instalado un editor de código <strong>(vscode, eclipse, notepad++, Sublime Text, etc )</strong> en el cual podamos ejecutar y probar nuestro código.</p>
+<p>Lo primero de todo es tener instalado un editor de código <strong>(vscode, eclipse, notepad++, Sublime Text, etc)</strong> en el cual podamos ejecutar y probar nuestro código.
+En nuestro caso usaremos vscode, pues a consideración personal es el mas completo junto con sus extensiones para <strong>Angular</strong>.
+Recomiendo estas extensiones:</p>
+<h3 id="1-angular-snippets">1. Angular Snippets</h3>
+<p>Esta extensión proporciona fragmentos de código para Angular en TypeScript y HTML. Los fragmentos de código son pequeñas piezas de código reutilizables que puedes insertar en tu código, lo que te ahorra tiempo de escritura y reduce la posibilidad de errores. Los fragmentos incluyen componentes, servicios, módulos, guardias, interceptores HTTP, rutas, entre otros.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2</code></li>
+</ul>
+<p><img src="imagenes/use-extension.gif" alt="Ejemplo uso angular snippets"></p>
+<h3 id="2-angular-language-service">2. Angular Language Service</h3>
+<p>Esta extensión mejora la experiencia de edición para las plantillas de Angular. Proporciona listas de finalización, que son sugerencias de código que aparecen mientras escribes, mensajes de diagnóstico, que son alertas sobre problemas en tu código, y la funcionalidad de &quot;ir a la definición&quot;, que te permite saltar directamente a donde se define una variable o función.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=Angular.ng-template</code></li>
+</ul>
+<h3 id="3-angular-console">3. Angular Console</h3>
+<p>Esta extensión ayuda a los desarrolladores a evitar la necesidad de buscar documentación de comandos de CLI raramente utilizados proporcionando autocompletado. Esto significa que mientras escribes un comando, la extensión te sugerirá posibles completaciones basadas en lo que has escrito hasta ahora. También facilita la navegación por esquemas personalizados, la búsqueda e instalación de nuevos plugins Nx, y la generación consistente de componentes, servicios y módulos de gestión de estado de Angular.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console</code></li>
+</ul>
+<h3 id="4-chrome--edge-debugger">4. Chrome &amp; Edge Debugger</h3>
+<p>Esta extensión permite a los desarrolladores depurar su código JavaScript directamente desde Visual Studio Code. La depuración es el proceso de encontrar y corregir errores en tu código. Con esta extensión, puedes establecer puntos de interrupción en tu código desde Visual Studio Code, lo que te permite detener la ejecución de tu código en puntos específicos y examinar los valores de las variables en ese momento.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools</code></li>
+</ul>
+<p><img src="imagenes/edge-for-vscode-context-walkthrough.gif" alt="Ejemplo uso Chrome &amp; Edge Debugger"></p>
+<h3 id="5-prettier">5. Prettier</h3>
+<p>Prettier es una extensión que formatea automáticamente tu código. El formateo del código es el proceso de hacer que el código sea más legible y consistente en términos de estilo, como la indentación, el espaciado y la colocación de las llaves. Prettier puede configurarse para formatear automáticamente tu código cada vez que guardas un archivo, lo que ayuda a mantener un estilo de código coherente en todo el proyecto.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode</code></li>
+</ul>
+<h3 id="6-material-icon-theme">6. Material Icon Theme</h3>
+<p>Esta extensión proporciona una amplia gama de iconos de archivos y carpetas, lo que facilita la identificación visual de los tipos de archivos en tu proyecto. Por ejemplo, los archivos JavaScript pueden tener un icono de una pequeña &quot;J&quot;, mientras que los archivos HTML pueden tener un icono de una pequeña &quot;H&quot;.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme</code></li>
+</ul>
+<h3 id="7-path-intellisense">7. Path Intellisense</h3>
+<p>Esta extensión proporciona autocompletado inteligente para las rutas de archivos en tu código. Esto significa que mientras escribes la ruta a un archivo, la extensión te sugerirá posibles completaciones basadas en los nombres de los archivos y las carpetas en tu proyecto. Esto puede ayudar a prevenir errores tipográficos y garantizar la precisión al hacer referencia a archivos o módulos dentro de tu proyecto.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense</code></li>
+</ul>
+<p><img src="imagenes/iaHeUiDeTUZuo.gif" alt="Ejemplo uso Path Intellisense"></p>
+<h3 id="8-auto-import">8. Auto Import</h3>
+<p>Esta extensión proporciona acciones de código y finalización de código para todas las importaciones disponibles. En JavaScript y TypeScript, a menudo necesitas importar funciones, objetos o valores de otros archivos o módulos. Esta extensión puede sugerirte automáticamente estas importaciones mientras escribes tu código, y puede insertarlas por ti cuando las seleccionas.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=steoates.autoimport</code></li>
+</ul>
+<h3 id="9-peacock">9. Peacock</h3>
+<p>Esta extensión cambia sutilmente el color de tu espacio de trabajo de Visual Studio Code. Esto puede ser útil cuando tienes varias instancias de VS Code abiertas y quieres poder identificar rápidamente cuál es cuál.</p>
+<ul>
+<li><code>https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock</code></li>
+</ul>
+<h3 id="10-angular-schematics">10. Angular Schematics</h3>
+<p>Esta extensión te permite generar código Angular con unos pocos clics. Se basa en la CLI de Angular y utiliza los mismos esquemas que la CLI. Los esquemas son plantillas de código que puedes personalizar para generar componentes, servicios, módulos y otras piezas de código de Angular.</p>
+<ul>
+<li>
+<p><code>https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics</code></p>
+<p><img src="imagenes/angular-schematics-demo-20191025.gif" alt="ejemplo de uso de angular schematics"></p>
+</li>
+</ul>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<hr>
 <h2 id="instalar-git">Instalar GIT</h2>
+<ul>
+<li>
+<h3>Paso 1: Descargar Git</h3>
+</li>
+</ul>
+<p>Primero, necesitas descargar el instalador de Git. Puedes hacerlo desde la página oficial de Git en <code>https://git-scm.com/download/win</code>. Una vez que estés en la página, la descarga debería comenzar automáticamente. Si no es así, puedes hacer clic en el enlace &quot;click here to download manually&quot;.</p>
+<ul>
+<li>
+<h3>Paso 2: Iniciar el instalador</h3>
+</li>
+</ul>
+<p>Una vez que el instalador de Git se haya descargado, ve a la carpeta de descargas y haz doble clic en el archivo <code>.exe</code> para iniciar el instalador.</p>
+<ul>
+<li>
+<h3>Paso 3: Aceptar la licencia</h3>
+</li>
+</ul>
+<p>Aparecerá una ventana con la licencia de Git. Es importante que leas y comprendas los términos antes de continuar. Si estás de acuerdo con los términos, haz clic en el botón que dice &quot;Next&quot; para aceptar los términos y continuar con la instalación.</p>
+<ul>
+<li>
+<h3>Paso 4: Seleccionar la ubicación de instalación</h3>
+</li>
+</ul>
+<p>A continuación, selecciona la carpeta donde deseas instalar Git. Por defecto, Git se instala en la carpeta <code>C:\Program Files\Git</code>. Si quieres cambiar la ubicación, puedes hacerlo en este paso. Una vez que hayas seleccionado la carpeta, haz clic en &quot;Next&quot;.</p>
+<ul>
+<li>
+<h3>Paso 5: Seleccionar componentes</h3>
+</li>
+</ul>
+<p>En la siguiente pantalla, puedes elegir los componentes que deseas instalar. Asegúrate de tener seleccionada la opción &quot;Windows Explorer integration&quot;, que te permitirá usar Git desde el menú contextual del Explorador de Windows. También puedes seleccionar otras opciones según tus necesidades. Una vez que hayas seleccionado los componentes, haz clic en &quot;Next&quot;.</p>
+<ul>
+<li>
+<h3>Paso 6: Elegir el editor de texto predeterminado</h3>
+</li>
+</ul>
+<p>Git te permite elegir tu editor de texto preferido. Por defecto, Git usa Vim, pero puedes cambiarlo a otro editor si lo prefieres. Selecciona el editor que prefieras de la lista y haz clic en &quot;Next&quot;.</p>
+<ul>
+<li>
+<h3>Paso 7: Ajustar tu PATH</h3>
+</li>
+</ul>
+<p>En esta pantalla, te recomendamos seleccionar la opción &quot;Use Git from the Windows Command Prompt&quot;. Esto te permitirá usar Git desde la línea de comandos de Windows. Si prefieres usar Git Bash, puedes seleccionar la opción &quot;Use Git Bash only&quot;. Una vez que hayas hecho tu selección, haz clic en &quot;Next&quot;.</p>
+<ul>
+<li>
+<h3>Paso 8: Configurar el manejo de línea de fin de archivo</h3>
+</li>
+</ul>
+<p>Git puede manejar automáticamente el cambio de línea de fin de archivo entre Windows y Unix. Te recomendamos seleccionar la opción &quot;Checkout Windows-style, commit Unix-style line endings&quot;. Esto convertirá las líneas de fin de archivo a estilo Windows cuando clones un repositorio, y las convertirá de nuevo a estilo Unix cuando hagas commit. Haz clic en &quot;Next&quot; para continuar.</p>
+<ul>
+<li>
+<h3>Paso 9: Configurar el emulador de terminal</h3>
+</li>
+</ul>
+<p>Git te permite elegir el emulador de terminal que prefieras. Te recomendamos seleccionar la opción &quot;Use MinTTY (the default terminal of MSYS2)&quot;, que proporciona una experiencia de terminal más rica. Haz clic en &quot;Next&quot; para continuar.</p>
+<ul>
+<li>
+<h3>Paso 10: Configurar opciones extra</h3>
+</li>
+</ul>
+<p>En la pantalla de opciones extra, puedes dejar las opciones predeterminadas. Estas incluyen habilitar el almacenamiento de credenciales para que no tengas que introducir tu nombre de usuario y contraseña cada vez que hagas push a un repositorio remoto. Haz clic en &quot;Next&quot; para continuar.</p>
+<ul>
+<li>
+<h3>Paso 11: Instalar</h3>
+</li>
+</ul>
+<p>Finalmente, haz clic en el botón &quot;Install&quot; para comenzar la instalación. Este proceso puede tardar unos minutos. Una vez que la instalación esté completa, haz clic en &quot;Finish&quot;.</p>
+<p>¡Eso es todo! Ahora deberías tener Git instalado en Windows. Para comprobar que la instalación fue exitosa, puedes abrir una ventana de comandos y escribir <code>git --version</code>. Esto debería mostrarte la versión de Git que acabas de instalar.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<hr>
 <h2 id="clonar-repositorio">Clonar repositorio</h2>
-<h2 id=""></h2>
-<h1 id="que-es-angular">Que es Angular</h1>
+<h3>Paso 1: Encuentra el repositorio que quieres clonar</h3>
+<p>Primero, necesitas encontrar el repositorio que quieres clonar. Esto puede ser cualquier repositorio que esté alojado en una plataforma que soporte Git, como GitHub, GitLab o Bitbucket. Cuando encuentres el repositorio, busca un botón o enlace que diga &quot;Clone&quot; o &quot;Clonar&quot;. Este botón te dará la URL del repositorio, que necesitarás para el siguiente paso. Asegúrate de copiar esta URL.</p>
+<p><code>https://github.com/FranJRR/Docs-ESP.git</code></p>
+<h3>Paso 2: Abre la terminal en tu computadora</h3>
+<p>Ahora que tienes la URL del repositorio, necesitas abrir la terminal en tu computadora. La terminal es una interfaz de línea de comandos que te permite interactuar con tu sistema operativo y con aplicaciones como Git. Puedes abrir la terminal buscándola en el menú de inicio de tu sistema operativo o usando un atajo de teclado.</p>
+<h3>Paso 3: Navega hasta el directorio donde quieres clonar el repositorio</h3>
+<p>Antes de clonar el repositorio, debes decidir dónde quieres que se guarde en tu computadora. Puedes elegir cualquier directorio que quieras. Una vez que hayas decidido, necesitas navegar hasta ese directorio en la terminal. Puedes hacer esto usando el comando <code>cd</code>, seguido del nombre del directorio. Por ejemplo, si quieres navegar a un directorio llamado &quot;Proyectos&quot;, escribirías <code>cd Proyectos</code> en la terminal y luego presionarías Enter.</p>
+<h3>Paso 4: Clona el repositorio</h3>
+<p>Ahora estás listo para clonar el repositorio. Para hacer esto, escribe el comando <code>git clone</code> en la terminal, seguido de la URL del repositorio que copiaste en el primer paso. Debería verse así: <code>git clone https://github.com/FranJRR/Docs-ESP.git</code>. Luego, presiona Enter.</p>
+<h3>Paso 5: Espera mientras Git clona el repositorio</h3>
+<p>Después de presionar Enter, Git comenzará a clonar el repositorio en tu directorio local. Dependiendo del tamaño del repositorio, esto puede tardar unos segundos o varios minutos. Mientras Git está clonando el repositorio, puedes ver el progreso en la terminal.</p>
+<h3>Paso 6: Verifica que el repositorio se haya clonado correctamente</h3>
+<p>Una vez que Git haya terminado de clonar el repositorio, puedes verificar que todo haya funcionado correctamente. Para hacer esto, puedes usar el comando <code>ls</code> en la terminal para listar los archivos y directorios en tu directorio actual. Deberías ver un nuevo directorio con el mismo nombre que el repositorio que acabas de clonar. Si entras en ese directorio (<code>cd Docs-ESP</code>), deberías ver todos los archivos y directorios del repositorio.</p>
+<h3>Paso 7: Comienza a trabajar en el repositorio</h3>
+<p>Ahora que has clonado el repositorio, puedes comenzar a trabajar en él. Cualquier cambio que hagas en los archivos del repositorio se rastreará en Git, lo que te permite guardar diferentes versiones de tu código y colaborar con otros.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<hr>
+<h2 id="primer-arranque">Primer arranque</h2>
+<h3 id="instalaci%C3%B3n-de-las-dependencias">Instalación de las dependencias</h3>
+<p>Una vez que hayas clonado el repositorio, el siguiente paso es instalar todas las dependencias necesarias. Estas dependencias están definidas en el archivo <code>package.json</code> que se encuentra en la raíz del proyecto.</p>
+<p>Para instalar las dependencias, abre una terminal y navega hasta la carpeta del proyecto <code>Docs-ESP</code>. Una vez allí, ejecuta el siguiente comando:</p>
+<pre class="hljs"><code><div>npm install 
+</div></code></pre>
+<p>Este comando instalará todas las dependencias necesarias para el proyecto.</p>
+<h3 id="arranque-del-servidor-de-desarrollo">Arranque del servidor de desarrollo</h3>
+<p>Ahora que todas las dependencias están instaladas, puedes iniciar el servidor de desarrollo. Para hacerlo, ejecuta el siguiente comando en la terminal:</p>
+<pre class="hljs"><code><div>ng serve
+</div></code></pre>
+<p>Este comando arrancará el servidor de desarrollo de Angular. Una vez que el servidor esté en marcha, podrás ver tu aplicación en acción.</p>
+<p>Abre un navegador y visita <code>http://localhost:4200/</code>. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.</p>
+<h3 id="construcci%C3%B3n-del-proyecto">Construcción del proyecto</h3>
+<p>Si quieres construir el proyecto para producción, puedes hacerlo ejecutando el siguiente comando:</p>
+<pre class="hljs"><code><div>ng build --prod
+</div></code></pre>
+<p>Este comando construirá el proyecto para producción y colocará los archivos resultantes en la carpeta <code>dist/</code>.</p>
+<h3 id="ayuda-adicional">Ayuda adicional</h3>
+<p>Si necesitas más ayuda con Angular CLI, puedes ejecutar <code>ng help</code> en la terminal para obtener más información. También puedes visitar el <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a> para obtener una guía más detallada.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h1 id="typescript">Typescript</h1>
+<h2 id="que-es-typescript">Que es Typescript</h2>
+<p><strong>TypeScript</strong> es un lenguaje de programación de alto nivel y de código abierto. Fue desarrollado por Microsoft y lanzado en octubre de 2012. TypeScript es un superconjunto de JavaScript, lo que significa que incluye todas las características de JavaScript y añade otras nuevas.</p>
+<p>Aquí están algunas de las principales características de TypeScript:</p>
+<ol>
+<li>
+<p><strong>Tipado estático</strong>: TypeScript introduce el tipado estático, lo que significa que el tipo de las variables se comprueba durante la compilación y no en la ejecución. Esto permite a los desarrolladores especificar los tipos de variables, parámetros de función y valores de retorno, lo que ayuda a detectar errores relacionados con el tipo durante el desarrollo.</p>
+</li>
+<li>
+<p><strong>Compatibilidad con JavaScript</strong>: TypeScript es compatible con todo el código JavaScript existente. Puede emplear este tipo de código sin problemas y también su sintaxis. Esto es posible porque TypeScript compila en JavaScript nativo.</p>
+</li>
+<li>
+<p><strong>Orientado a objetos</strong>: TypeScript posee una gran variedad de mecanismos destinados a la programación orientada a objetos, lo que resulta especialmente útil en el desarrollo de aplicaciones de gran tamaño.</p>
+</li>
+<li>
+<p><strong>Detección temprana de errores</strong>: TypeScript es muy eficaz a la hora de detectar errores y bugs en el código JavaScript antes de la ejecución, lo que hace que el código sea mucho más fiable.</p>
+</li>
+<li>
+<p><strong>Desarrollo de aplicaciones a gran escala</strong>: TypeScript fue diseñado para el desarrollo de aplicaciones a gran escala y permite trabajar de manera estructurada.</p>
+</li>
+</ol>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="primeros-pasos">Primeros pasos</h2>
+<h3>1. Instalar TypeScript </h3>
+<p>Lo primero que debes hacer es instalar TypeScript. Para ello, puedes usar npm (el gestor de paquetes de Node.js) con el siguiente comando en la terminal:</p>
+<pre class="hljs"><code><div>npm install -g typescript
+</div></code></pre>
+<h3>2. Crear un archivo TypeScript </h3>
+<p>A continuación, crea un archivo con extensión <code>.ts</code>. Por ejemplo, puedes llamarlo <code>hola-mundo.ts</code>.</p>
+<h3>3. Escribir el código </h3>
+<p>Dentro de este archivo, inserta el siguiente código:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">var</span> mensaje: <span class="hljs-built_in">string</span> = <span class="hljs-string">"Hola Mundo"</span>;
+<span class="hljs-built_in">console</span>.log(mensaje);
+</div></code></pre>
+<p>En este código, hemos declarado una variable <code>mensaje</code> de tipo <code>string</code> con el valor &quot;Hola Mundo&quot;, y luego mostramos su contenido en la consola.</p>
+<h3>4. Compilar el archivo TypeScript </h3>
+<p>Una vez que hayas escrito tu código, debes compilarlo. Para ello, utiliza el comando <code>tsc</code> seguido del nombre de tu archivo:</p>
+<pre class="hljs"><code><div>tsc hola-mundo.ts
+</div></code></pre>
+<p>Después de la compilación, deberías ver un nuevo archivo <code>.js</code> en el mismo directorio. Este es el archivo JavaScript que se generó a partir de tu código TypeScript.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="tipos-b%C3%A1sicos">Tipos básicos</h2>
+<h3>Boolean</h3>
+<p>El tipo <code>boolean</code> representa un valor lógico: verdadero o falso. Es útil cuando necesitas hacer una comprobación, como si un usuario ha hecho clic en un botón.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> esVerdadero: <span class="hljs-built_in">boolean</span> = <span class="hljs-literal">true</span>; <span class="hljs-comment">// Declara una variable 'esVerdadero' y le asigna el valor 'true'</span>
+</div></code></pre>
+<h3>Number</h3>
+<p>El tipo <code>number</code> se utiliza para representar números. Puedes usar números enteros, decimales, hexadecimales, binarios y octales.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> entero: <span class="hljs-built_in">number</span> = <span class="hljs-number">6</span>; <span class="hljs-comment">// Un número entero</span>
+<span class="hljs-keyword">let</span> decimal: <span class="hljs-built_in">number</span> = <span class="hljs-number">6.0</span>; <span class="hljs-comment">// Un número decimal</span>
+<span class="hljs-keyword">let</span> hexadecimal: <span class="hljs-built_in">number</span> = <span class="hljs-number">0xf00d</span>; <span class="hljs-comment">// Un número hexadecimal</span>
+<span class="hljs-keyword">let</span> binario: <span class="hljs-built_in">number</span> = <span class="hljs-number">0b1010</span>; <span class="hljs-comment">// Un número binario</span>
+<span class="hljs-keyword">let</span> octal: <span class="hljs-built_in">number</span> = <span class="hljs-number">0o744</span>; <span class="hljs-comment">// Un número octal</span>
+</div></code></pre>
+<h3>String</h3>
+<p>El tipo <code>string</code> se utiliza para representar texto. Puedes usar comillas simples o dobles para crear una cadena de texto.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> color: <span class="hljs-built_in">string</span> = <span class="hljs-string">"azul"</span>; <span class="hljs-comment">// Una cadena de texto creada con comillas dobles</span>
+color = <span class="hljs-string">'rojo'</span>; <span class="hljs-comment">// Una cadena de texto creada con comillas simples</span>
+</div></code></pre>
+<h3>Array</h3>
+<p>Un <code>array</code> es una colección ordenada de valores. Puedes crear un array de números, cadenas de texto, etc.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> lista1: <span class="hljs-built_in">number</span>[] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]; <span class="hljs-comment">// Un array de números</span>
+<span class="hljs-keyword">let</span> lista2: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]; <span class="hljs-comment">// Otra forma de declarar un array de números</span>
+</div></code></pre>
+<h3>Tuple</h3>
+<p>Una <code>tupla</code> es un array con un número fijo de elementos cuyos tipos son conocidos.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> x: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>]; <span class="hljs-comment">// Declara una tupla</span>
+x = [<span class="hljs-string">"hola"</span>, <span class="hljs-number">10</span>]; <span class="hljs-comment">// Inicializa la tupla</span>
+</div></code></pre>
+<h3>Enum</h3>
+<p>Un <code>enum</code> es una forma de dar nombres más amigables a conjuntos de valores numéricos.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">enum</span> Color {Rojo, Verde, Azul} <span class="hljs-comment">// Declara un enum</span>
+<span class="hljs-keyword">let</span> c: Color = Color.Verde; <span class="hljs-comment">// Usa el enum</span>
+</div></code></pre>
+<h3>Any</h3>
+<p>El tipo <code>any</code> se utiliza cuando quieres optar por la comprobación de tipos durante la compilación. Es decir, el tipo <code>any</code> puede ser cualquier tipo de dato.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> noSeguro: <span class="hljs-built_in">any</span> = <span class="hljs-number">4</span>; <span class="hljs-comment">// 'noSeguro' puede ser un número</span>
+noSeguro = <span class="hljs-string">"puede ser una cadena"</span>; <span class="hljs-comment">// 'noSeguro' puede ser una cadena de texto</span>
+noSeguro = <span class="hljs-literal">false</span>; <span class="hljs-comment">// 'noSeguro' puede ser un booleano</span>
+</div></code></pre>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="objetos-arreglos-e-interfaces">Objetos, arreglos e interfaces</h2>
+<p>¡Por supuesto! Aquí tienes ejemplos más detallados:</p>
+<h3>Objetos</h3>
+<p>Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor. Un valor de propiedad puede ser una función, que se conoce como método del objeto.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> coche = {
+    marca: <span class="hljs-string">'Toyota'</span>,
+    modelo: <span class="hljs-string">'Corolla'</span>,
+    año: <span class="hljs-number">2005</span>,
+    arrancar: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'¡El coche está arrancando!'</span>);
+    }
+};
+
+<span class="hljs-comment">// Para acceder a las propiedades del objeto usamos la notación de punto</span>
+<span class="hljs-built_in">console</span>.log(coche.marca); <span class="hljs-comment">// Salida: Toyota</span>
+coche.arrancar(); <span class="hljs-comment">// Salida: ¡El coche está arrancando!</span>
+</div></code></pre>
+<h3>Array</h3>
+<p>Un array es un tipo especial de objeto que se utiliza para almacenar múltiples valores en una única variable.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> frutas: <span class="hljs-built_in">string</span>[] = [<span class="hljs-string">'manzana'</span>, <span class="hljs-string">'banana'</span>, <span class="hljs-string">'mango'</span>];
+
+<span class="hljs-comment">// Accedemos a los elementos del array por su índice</span>
+<span class="hljs-built_in">console</span>.log(frutas[<span class="hljs-number">0</span>]); <span class="hljs-comment">// Salida: manzana</span>
+
+<span class="hljs-comment">// Los Array tienen métodos como push para añadir elementos</span>
+frutas.push(<span class="hljs-string">'piña'</span>);
+<span class="hljs-built_in">console</span>.log(frutas); <span class="hljs-comment">// Salida: ['manzana', 'banana', 'mango', 'piña']</span>
+</div></code></pre>
+<h3>Interfaces</h3>
+<p>Las interfaces son una forma poderosa de definir 'contratos' tanto para tu proyecto, como para el código externo que utilizas.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">interface</span> Persona {
+    nombre: <span class="hljs-built_in">string</span>;
+    edad: <span class="hljs-built_in">number</span>;
+    saludar: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">let</span> persona: Persona = {
+    nombre: <span class="hljs-string">'Juan'</span>,
+    edad: <span class="hljs-number">30</span>,
+    saludar: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'¡Hola, mi nombre es '</span> + <span class="hljs-keyword">this</span>.nombre + <span class="hljs-string">'!'</span>;
+    }
+};
+
+<span class="hljs-built_in">console</span>.log(persona.saludar()); <span class="hljs-comment">// Salida: ¡Hola, mi nombre es Juan!</span>
+</div></code></pre>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="funciones-y-sus-argumentos">Funciones y sus argumentos</h2>
+<h3>Declaración de función:</h3>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saludo</span>(<span class="hljs-params">nombre: <span class="hljs-built_in">string</span></span>): <span class="hljs-title">string</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`¡Hola, <span class="hljs-subst">${nombre}</span>!`</span>;
+}
+<span class="hljs-built_in">console</span>.log(saludo(<span class="hljs-string">"Juan"</span>));  <span class="hljs-comment">// Imprime: ¡Hola, Juan!</span>
+</div></code></pre>
+<p>En este ejemplo, la función <code>saludo</code> toma un argumento <code>nombre</code> de tipo <code>string</code> y devuelve un <code>string</code>. Cuando llamamos a la función con el argumento &quot;Juan&quot;, imprime &quot;¡Hola, Juan!&quot;.</p>
+<h3>Expresión de función:</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> cuadrado = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">num: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> num * num;
+}
+<span class="hljs-built_in">console</span>.log(cuadrado(<span class="hljs-number">5</span>));  <span class="hljs-comment">// Imprime: 25</span>
+</div></code></pre>
+<p>Aquí, la función <code>cuadrado</code> toma un número y devuelve su cuadrado. Cuando llamamos a la función con el número 5, imprime 25.</p>
+<h3>Función flecha:</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> esPar = (num: <span class="hljs-built_in">number</span>): <span class="hljs-function"><span class="hljs-params">boolean</span> =&gt;</span> {
+  <span class="hljs-keyword">return</span> num % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+<span class="hljs-built_in">console</span>.log(esPar(<span class="hljs-number">4</span>));  <span class="hljs-comment">// Imprime: true</span>
+<span class="hljs-built_in">console</span>.log(esPar(<span class="hljs-number">3</span>));  <span class="hljs-comment">// Imprime: false</span>
+</div></code></pre>
+<p>La función <code>esPar</code> verifica si un número es par. Cuando la llamamos con el número 4, imprime <code>true</code>, y cuando la llamamos con el número 3, imprime <code>false</code>.</p>
+<h3>Retorno implícito:</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> doble = (num: <span class="hljs-built_in">number</span>): <span class="hljs-function"><span class="hljs-params">number</span> =&gt;</span> num * <span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(doble(<span class="hljs-number">7</span>));  <span class="hljs-comment">// Imprime: 14</span>
+</div></code></pre>
+<p>La función <code>doble</code> devuelve el doble de un número. Cuando la llamamos con el número 7, imprime 14.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="destructuracion-de-arrays-y-objetos">Destructuracion de arrays y objetos</h2>
+<h3> Desestructuración de Arrays</h3>
+<p>La desestructuración de arrays en TypeScript permite asignar los elementos de un array a variables individuales de una manera más eficiente. Aquí tienes un ejemplo más detallado:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> frutas = [<span class="hljs-string">'Manzana'</span>, <span class="hljs-string">'Banana'</span>, <span class="hljs-string">'Cereza'</span>];
+
+<span class="hljs-comment">// Desestructuración de array</span>
+<span class="hljs-keyword">let</span> [fruta1, fruta2, fruta3] = frutas;
+
+<span class="hljs-built_in">console</span>.log(fruta1); <span class="hljs-comment">// 'Manzana'</span>
+<span class="hljs-built_in">console</span>.log(fruta2); <span class="hljs-comment">// 'Banana'</span>
+<span class="hljs-built_in">console</span>.log(fruta3); <span class="hljs-comment">// 'Cereza'</span>
+</div></code></pre>
+<p>Si sólo estás interesado en ciertos elementos del array, puedes omitir los demás:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> [ , , fruta3] = frutas;
+
+<span class="hljs-built_in">console</span>.log(fruta3); <span class="hljs-comment">// 'Cereza'</span>
+</div></code></pre>
+<h3> Desestructuración de Objetos</h3>
+<p>La desestructuración de objetos en TypeScript permite extraer propiedades de un objeto y asignarlas a variables de una manera más eficiente. Aquí tienes un ejemplo más detallado:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> estudiante = {
+    nombre: <span class="hljs-string">'Ana'</span>,
+    edad: <span class="hljs-number">20</span>,
+    carrera: <span class="hljs-string">'Ingeniería de Software'</span>
+};
+
+<span class="hljs-comment">// Desestructuración de objeto</span>
+<span class="hljs-keyword">let</span> {nombre, edad, carrera} = estudiante;
+
+<span class="hljs-built_in">console</span>.log(nombre); <span class="hljs-comment">// 'Ana'</span>
+<span class="hljs-built_in">console</span>.log(edad); <span class="hljs-comment">// 20</span>
+<span class="hljs-built_in">console</span>.log(carrera); <span class="hljs-comment">// 'Ingeniería de Software'</span>
+</div></code></pre>
+<p>Si quieres asignar las propiedades a variables con diferentes nombres, puedes hacerlo de la siguiente manera:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> {nombre: nombreEstudiante, edad: edadEstudiante, carrera: carreraEstudiante} = estudiante;
+
+<span class="hljs-built_in">console</span>.log(nombreEstudiante); <span class="hljs-comment">// 'Ana'</span>
+<span class="hljs-built_in">console</span>.log(edadEstudiante); <span class="hljs-comment">// 20</span>
+<span class="hljs-built_in">console</span>.log(carreraEstudiante); <span class="hljs-comment">// 'Ingeniería de Software'</span>
+</div></code></pre>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h2 id="importaciones-y-exportaciones">Importaciones y exportaciones</h2>
+<h3> Importaciones</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Importar un solo componente desde un módulo</span>
+<span class="hljs-keyword">import</span> { Componente1 } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ruta/al/archivo'</span>;
+</div></code></pre>
+<p>En este caso, estamos importando <code>Componente1</code> desde el archivo que se encuentra en <code>./ruta/al/archivo</code>. Esto significa que <code>Componente1</code> es un módulo o función que se ha exportado desde ese archivo y ahora lo estamos importando para usarlo en nuestro código.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Importar múltiples componentes desde un módulo</span>
+<span class="hljs-keyword">import</span> { Componente1, Componente2, Componente3 } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ruta/al/archivo'</span>;
+</div></code></pre>
+<p>Aquí, estamos importando <code>Componente1</code>, <code>Componente2</code> y <code>Componente3</code> desde el mismo archivo. Esto es útil cuando quieres importar varias funciones o módulos desde el mismo archivo.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Importar todo el módulo y darle un alias</span>
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Modulo <span class="hljs-keyword">from</span> <span class="hljs-string">'./ruta/al/modulo'</span>;
+</div></code></pre>
+<p>En este caso, <code>Modulo</code> es un alias para todo lo que se exporta desde <code>./ruta/al/modulo</code>. Esto es útil cuando quieres importar todo desde un módulo y usarlo bajo un nombre específico.</p>
+<h3> Exportaciones</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Exportar una clase</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MiClase1 {
+  <span class="hljs-comment">// código de la clase</span>
+}
+</div></code></pre>
+<p>Aquí, <code>MiClase1</code> se puede importar desde otros módulos. Esto significa que <code>MiClase1</code> es una clase que estamos haciendo disponible para otros módulos para que la importen y la utilicen.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Exportar múltiples elementos</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MiClase2 {
+  <span class="hljs-comment">// código de la clase</span>
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> miVariable = <span class="hljs-string">'valor'</span>;
+</div></code></pre>
+<p>En este caso, <code>MiClase2</code> y <code>miVariable</code> también se pueden importar desde otros módulos. Esto significa que estamos haciendo disponibles tanto la clase <code>MiClase2</code> como la constante <code>miVariable</code> para que otros módulos las importen y las utilicen.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Exportación predeterminada</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> MiClasePrincipal {
+  <span class="hljs-comment">// código de la clase</span>
+}
+</div></code></pre>
+<p>Aquí, <code>MiClasePrincipal</code> es la exportación predeterminada del módulo y se puede importar sin usar llaves <code>{}</code>. Esto es útil cuando un módulo tiene un propósito principal y quieres hacerlo fácilmente importable.</p>
+<h3> Importación de una exportación predeterminada y otras exportaciones</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Importar una exportación predeterminada y otras exportaciones</span>
+<span class="hljs-keyword">import</span> MiClasePrincipal, { MiClase1, MiClase2 } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ruta/al/modulo'</span>;
+</div></code></pre>
+<p>Aquí, <code>MiClasePrincipal</code> es la exportación predeterminada del módulo, y <code>MiClase1</code> y <code>MiClase2</code> son otras exportaciones. Esto es útil cuando quieres importar la exportación predeterminada y otras exportaciones al mismo tiempo.</p>
+<h3> Reexportaciones</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Reexportar todo desde un módulo</span>
+<span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">'./ruta/al/modulo'</span>;
+</div></code></pre>
+<p>En este caso, todo lo que se exporta desde <code>./ruta/al/modulo</code> se puede importar desde tu módulo. Esto es útil cuando quieres hacer que todo lo que se exporta desde otro módulo esté disponible para ser importado desde tu módulo.</p>
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<h1 id="angular">Angular</h1>
+<h2 id="que-es-angular">Que es Angular</h2>
 <p><strong>Angular</strong> es un <strong>framework</strong> de desarrollo de software de código abierto mantenido por <strong>Google</strong>. Es una plataforma de desarrollo que se utiliza para crear aplicaciones <strong>web de una sola página(SPA)</strong>. Una aplicación <strong>SPA</strong> significa que todo el contenido de la aplicación se carga en una sola página web, lo que mejora la experiencia del usuario.</p>
 <p>Angular está escrito en <strong>TypeScript</strong>, un superconjunto de <strong>JavaScript</strong> que proporciona tipos estáticos. Los tipos estáticos ayudan a prevenir errores y a mejorar la legibilidad del código.</p>
 <p>Angular proporciona una serie de características y funcionalidades que facilitan el desarrollo de aplicaciones web complejas. Estas características incluyen:</p>
@@ -398,38 +952,9 @@ code {
 <li><strong>Routing:</strong> El enrutamiento (routing) permite a los usuarios navegar entre diferentes partes de una aplicación.</li>
 <li><strong>Servicios:</strong> Los servicios se utilizan para almacenar datos y realizar operaciones.</li>
 </ul>
-<!-- # Documentación 
- 
-Bienvenidos a este proyecto dedicado a la documentación sobre **Angular** con **Angular Material**.
-
-Este proyecto esta hecho con la finalidad que entre la comunidad de **git** consigamos tener la mejor documentación hispanohablante dedicada 
-
-![Angular Material icon](https://material.angular.io/assets/img/angular-material-logo.svg ){width:10px; height:10px;}
-
-![Angular Material Icon](imagenes/angular-material-logo.svg){width:10px}
-
-# 📖 Documentación📖
-
-Bienvenidos a este proyecto dedicado a la documentación sobre **Angular** con **Material UI**.
-
-Este proyecto esta hecho con la finalidad que entre la comunidad de **GIT** consigamos tener la mejor documentación hispanohablante dedicada a estos **Frameworks**. <img src=https://material.angular.io/assets/img/angular-material-logo.svg alt=logo height= 18px/><img src=https://angular.io/assets/images/logos/angular/angular.png alt=lo1go height= 20px/>
-
- 
-
-## Que es Angular
-
-  
-**Angular** es un **framework** de desarrollo de software de código abierto mantenido por **Google**. Es una plataforma de desarrollo que se utiliza para crear aplicaciones **web de una sola página(SPA)**. Una aplicación **SPA** significa que todo el contenido de la aplicación se carga en una sola página web, lo que mejora la experiencia del usuario.
-
-Angular está escrito en **TypeScript**, un superconjunto de **JavaScript** que proporciona tipos estáticos. Los tipos estáticos ayudan a prevenir errores y a mejorar la legibilidad del código.
-
-Angular proporciona una serie de características y funcionalidades que facilitan el desarrollo de aplicaciones web complejas. Estas características incluyen:
-
--   **Componentes:**  Los componentes son la unidad básica de construcción de aplicaciones Angular. Cada componente es responsable de una parte específica de la interfaz de usuario.
-- **Directivas:** Las directivas son elementos HTML personalizados que se utilizan para agregar funcionalidad a la interfaz de usuario.
-- **Pipes:** Los pipes se utilizan para formatear datos.
-- **Routing:** El enrutamiento (routing) permite a los usuarios navegar entre diferentes partes de una aplicación.
-- **Servicios:** Los servicios se utilizan para almacenar datos y realizar operaciones. -->
+<p><strong><a href="#introducci%C3%B3n">Pulse aqui para volver al Inicio</a></strong></p>
+<!-- 
+-  -->
 
 </body>
 </html>
